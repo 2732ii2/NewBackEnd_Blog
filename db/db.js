@@ -2,7 +2,7 @@
 
 import mongoose from "mongoose";
 
-
+const DB= "mongodb+srv://Mkhan:mkhan@cluster0.uydprj9.mongodb.net/?retryWrites=true&w=majority";
 
 export async function connection()
 {
@@ -12,13 +12,10 @@ export async function connection()
         //     useNewUrlParser: true,
         //     });
 
-        var connect = await mongoose.connect(
-          "mongodb+srv://Mkhan:mkhan@cluster0.uydprj9.mongodb.net/?retryWrites=true&w=majority",
-          {
-            useUnifiedTopology: true,
-            useNewUrlParser: true,
-          }
-        );
+        var connect = await mongoose.connect(DB, {
+          useUnifiedTopology: true,
+          useNewUrlParser: true
+        });
         // console.log("connected db... ");
         console.log("connected_db");
     }
