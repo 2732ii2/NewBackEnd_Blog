@@ -2,7 +2,8 @@
 
 import mongoose from "mongoose";
 
-const DB= "mongodb+srv://Mkhan:mkhan@cluster0.uydprj9.mongodb.net/?retryWrites=true&w=majority";
+const DB =
+  "mongodb+srv://Mkhan:Ashad123@cluster0.uydprj9.mongodb.net/?retryWrites=true&w=majority";
 
 export async function connection()
 {
